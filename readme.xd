@@ -1,0 +1,117 @@
+# co2.trade
+
+**Infrastructure-grade verification logic for carbon assets.**
+
+co2.trade is a source-led, one-page reference project that documents how carbon credits can be measured, verified, represented, and settled as digital assets — without relying on blind trust.
+
+This repository hosts the public-facing specification layer of the project.
+
+---
+
+## Purpose
+
+Carbon markets fail where verification, uniqueness, and settlement integrity break down.
+
+The goal of co2.trade is not to issue carbon credits, but to define the **verification and settlement stack** that makes carbon assets auditable, machine-readable, and economically usable at infrastructure level.
+
+---
+
+## Conceptual Scope
+
+co2.trade focuses on:
+
+- Monitoring, Reporting and Verification (MRV)
+- Registry anchoring and lifecycle integrity
+- Token representation without double-counting
+- Machine-to-Machine (M2M) settlement logic
+- Security, audit, and protocol risk considerations
+
+The project deliberately avoids:
+- Project marketing
+- Offset promotion
+- Impact claims
+
+co2.trade standardizes *how claims are verified and settled*, not *what should be claimed*.
+
+---
+
+## Why this exists
+
+Carbon credits increasingly behave like financial instruments.
+
+However, most platforms still rely on:
+- opaque registries
+- manual verification breaks
+- unverifiable retirement semantics
+
+co2.trade treats carbon assets as **environmental financial infrastructure**, not as narrative products.
+
+---
+
+## Architecture
+
+- Static one-page site
+- Hosted via GitHub Pages
+- No backend
+- No tracking
+- No user data
+
+Primary value lies in:
+- semantic clarity
+- machine-readable structure
+- verifiable reference logic
+
+---
+
+## Standards & Anchors
+
+The conceptual framework aligns with established bodies, including:
+
+- EU Emissions Trading System (EU ETS)
+- MRV standards and methodologies
+- Registry-based asset lifecycle models
+- Climate disclosure frameworks (TCFD / ISSB)
+- Security principles known from institutional cyber risk management
+
+All references are used as **verification anchors**, not endorsements.
+
+---
+
+## What this is not
+
+- Not a trading platform
+- Not a marketplace
+- Not an offset issuer
+- Not investment advice
+
+co2.trade is a **reference layer**, not an execution layer.
+
+---
+
+## Status
+
+Early-stage public specification.  
+Stable content, intentionally low change frequency.
+
+Future iterations may extend:
+- M2M interface definitions
+- formal verification schemas
+- cross-registry mapping logic
+
+---
+
+## License
+
+Content and concepts are published for reference and discussion.
+
+No warranties.  
+No guarantees.  
+Use at your own risk.
+
+---
+
+## Contact
+
+Project namespace: co2.trade  
+No commercial solicitation.  
+No support channel.
