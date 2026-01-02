@@ -33,7 +33,9 @@
   <!-- CSS -->
    <style> 
    
-   /* /assets/styles.css */
+/* ==========================================================================
+   Base variables
+   ========================================================================== */
 
 :root{
   --bg: #0b0c10;
@@ -49,17 +51,24 @@
   --max: 1120px;
   --gap: 24px;
   --tap: 44px;
-  --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+          "Apple Color Emoji","Segoe UI Emoji";
 }
 
+/* ==========================================================================
+   Reset & base
+   ========================================================================== */
+
 *{ box-sizing: border-box; }
-html,body{ height:100%; }
+html, body{ height:100%; }
+
 body{
   margin:0;
   font-family: var(--font);
-  background: radial-gradient(1200px 800px at 10% -10%, rgba(255,255,255,.06), transparent 55%),
-              radial-gradient(900px 600px at 90% 10%, rgba(255,255,255,.05), transparent 60%),
-              var(--bg);
+  background:
+    radial-gradient(1200px 800px at 10% -10%, rgba(255,255,255,.06), transparent 55%),
+    radial-gradient(900px 600px at 90% 10%, rgba(255,255,255,.05), transparent 60%),
+    var(--bg);
   color: var(--text);
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
@@ -73,6 +82,10 @@ a{
 }
 a:hover{ border-bottom-color: rgba(255,255,255,.55); }
 
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
 .container{
   width: min(var(--max), calc(100% - 40px));
   margin: 0 auto;
@@ -85,6 +98,10 @@ a:hover{ border-bottom-color: rgba(255,255,255,.55); }
 .module-header{
   margin-bottom: 28px;
 }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
 
 .kicker{
   display:inline-flex;
@@ -110,13 +127,22 @@ h2{
   font-size: 16px;
 }
 
-.grid{ display:grid; gap: var(--gap); }
-.grid-2{ grid-template-columns: 1.2fr 0.8fr; }
+/* ==========================================================================
+   Grid
+   ========================================================================== */
 
-@media (max-width: 980px){
-  .module{ padding: 44px 0; }
-  .grid-2{ grid-template-columns: 1fr; }
+.grid{
+  display:grid;
+  gap: var(--gap);
 }
+
+.grid-2{
+  grid-template-columns: 1.2fr 0.8fr;
+}
+
+/* ==========================================================================
+   Cards & content blocks
+   ========================================================================== */
 
 .card{
   background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
@@ -136,6 +162,7 @@ h2{
   margin: 0;
   padding-left: 20px;
 }
+
 .stack-step{
   margin: 14px 0;
   padding: 14px 14px 14px 12px;
@@ -143,10 +170,12 @@ h2{
   border-radius: var(--radius-sm);
   background: rgba(0,0,0,.18);
 }
+
 .stack-step h4{
   margin: 0 0 8px 0;
   font-size: 15px;
 }
+
 .stack-step p{
   margin: 0 0 10px 0;
   color: var(--muted);
@@ -155,9 +184,15 @@ h2{
 .bullets{
   margin: 0;
   padding-left: 18px;
-  color: var(--text);
 }
-.bullets li{ margin: 6px 0; color: var(--muted); }
+.bullets li{
+  margin: 6px 0;
+  color: var(--muted);
+}
+
+/* ==========================================================================
+   CTA
+   ========================================================================== */
 
 .cta-row{
   display:flex;
@@ -180,43 +215,35 @@ h2{
   border-bottom: none;
 }
 
-.cta.primary{
-  background: rgba(255,255,255,.10);
-}
-.cta.secondary{
-  background: rgba(0,0,0,.16);
-}
+.cta.primary{ background: rgba(255,255,255,.10); }
+.cta.secondary{ background: rgba(0,0,0,.16); }
 
-.fineprint{
-  margin-top: 14px;
-  color: var(--muted);
-  font-size: 13px;
-}
-
-.divider{
-  border: 0;
-  border-top: 1px solid var(--hairline);
-  margin: 18px 0;
-}
+/* ==========================================================================
+   Tables
+   ========================================================================== */
 
 .table-wrap{
   border: 1px solid var(--hairline);
   border-radius: var(--radius-sm);
-  overflow: auto;
+  overflow-x: auto;
   background: rgba(0,0,0,.14);
+  -webkit-overflow-scrolling: touch;
 }
 
 .stack-table{
   width: 100%;
-  border-collapse: collapse;
   min-width: 640px;
+  border-collapse: collapse;
 }
-.stack-table th, .stack-table td{
+
+.stack-table th,
+.stack-table td{
   text-align: left;
   vertical-align: top;
-  padding: 12px 12px;
+  padding: 12px;
   border-bottom: 1px solid var(--hairline);
 }
+
 .stack-table thead th{
   font-size: 13px;
   letter-spacing: .06em;
@@ -224,16 +251,22 @@ h2{
   color: var(--muted);
   background: rgba(255,255,255,.04);
 }
+
 .stack-table tbody td{ color: var(--muted); }
 .stack-table tbody tr:last-child td{ border-bottom: 0; }
+
+/* ==========================================================================
+   Details / badges
+   ========================================================================== */
 
 .details{
   border: 1px solid var(--hairline);
   border-radius: var(--radius-sm);
-  padding: 12px 12px;
+  padding: 12px;
   background: rgba(0,0,0,.14);
   margin: 12px 0;
 }
+
 .details summary{
   cursor: pointer;
   list-style: none;
@@ -248,6 +281,7 @@ h2{
   gap: 10px;
   margin-top: 14px;
 }
+
 .badge{
   display:inline-flex;
   align-items:center;
@@ -259,16 +293,22 @@ h2{
   font-size: 13px;
 }
 
+/* ==========================================================================
+   Sources
+   ========================================================================== */
+
 .sources{
   margin-top: 18px;
   padding-top: 18px;
   border-top: 1px solid var(--hairline);
   scroll-margin-top: 96px;
 }
+
 .sources h3{
   margin: 0 0 10px 0;
   font-size: 16px;
 }
+
 .sources-list{
   margin: 0;
   padding-left: 18px;
@@ -278,16 +318,65 @@ h2{
   color: var(--muted);
 }
 
-/* Focus visibility */
+/* ==========================================================================
+   Accessibility & motion
+   ========================================================================== */
+
 :focus-visible{
   outline: 2px solid rgba(255,255,255,.45);
   outline-offset: 3px;
   border-radius: 10px;
 }
 
-/* Reduced motion */
 @media (prefers-reduced-motion: reduce){
-  *{ scroll-behavior: auto !important; transition: none !important; animation: none !important; }
+  *{
+    scroll-behavior: auto !important;
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* ==========================================================================
+   Responsive refinements
+   ========================================================================== */
+
+/* Tablet & below */
+@media (max-width: 1024px){
+  .grid-2{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px){
+  .container{
+    width: calc(100% - 24px);
+  }
+
+  .module{
+    padding: 44px 0;
+  }
+
+  .card{
+    padding: 16px;
+  }
+
+  .cta-row{
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cta{
+    width: 100%;
+  }
+
+  .table-wrap::after{
+    content: "Swipe horizontally to view full table";
+    display: block;
+    font-size: 12px;
+    color: var(--muted);
+    padding: 8px 0 0;
+  }
 }
 
    
