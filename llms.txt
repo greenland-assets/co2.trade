@@ -1,0 +1,23 @@
+# CO2.trade
+
+Independent reference project on carbon markets, carbon accounting and CO₂-related market structures.
+
+## Canonical Resource
+
+[Home](https://co2.trade/)
+
+## Main Sections
+
+- [Sources](https://co2.trade/sources/)
+
+## Purpose
+
+CO2.trade provides an independent reference on carbon markets, emissions accounting, trading mechanisms and related reference structures.
+
+## Administrative
+
+No separate administrative resources are published.
+
+## Repository
+
+[CO2.trade Repository](https://github.com/greenland-assets/co2.trade)
