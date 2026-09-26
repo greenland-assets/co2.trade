@@ -6,9 +6,6 @@ Independent reference project on carbon markets, carbon accounting and CO₂-rel
 
 [Home](https://co2.trade/)
 
-## Main Sections
-
-- [Sources](https://co2.trade/sources/)
 
 ## Purpose
 
