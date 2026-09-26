@@ -383,81 +383,99 @@ h2{
    </style>
 
   <!-- Structured data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://co2.trade/#org",
-        "name": "co2.trade",
-        "url": "https://co2.trade/",
-        "description": "A source-led one-page reference describing an infrastructure-grade verification and settlement stack for carbon assets.",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://co2.trade/assets/logo.png"
-        }
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://co2.trade/#website",
-        "url": "https://co2.trade/",
-        "name": "co2.trade",
-        "publisher": { "@id": "https://co2.trade/#org" },
-        "inLanguage": "en",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://co2.trade/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://co2.trade/#webpage",
-        "url": "https://co2.trade/",
-        "name": "The M2M Verification Stack for Carbon Assets",
-        "isPartOf": { "@id": "https://co2.trade/#website" },
-        "about": [
-          { "@type": "Thing", "name": "Carbon markets" },
-          { "@type": "Thing", "name": "Monitoring, Reporting and Verification (MRV)" },
-          { "@type": "Thing", "name": "Emissions trading" },
-          { "@type": "Thing", "name": "Smart contracts" },
-          { "@type": "Thing", "name": "Oracles" }
-        ],
-        "primaryImageOfPage": {
-          "@type": "ImageObject",
-          "url": "https://co2.trade/assets/og.png"
-        },
-        "inLanguage": "en",
-        "datePublished": "2026-01-02",
-        "dateModified": "2026-01-02",
-        "breadcrumb": { "@id": "https://co2.trade/#breadcrumb" }
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://co2.trade/#breadcrumb",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://co2.trade/"
-          }
-        ]
-      },
-      {
-        "@type": "WebAPI",
-        "@id": "https://co2.trade/#verification-api",
-        "name": "M2M Verification Stack (Concept)",
-        "description": "A conceptual machine-to-machine interface for issuance, transfer, and retirement of uniquely identifiable carbon assets, designed around auditability and integrity controls.",
-        "provider": { "@id": "https://co2.trade/#org" },
-        "documentation": "https://github.com/greenland-assets/co2.trade",
-        "inLanguage": "en",
-        "category": "Environmental markets / Verification / Settlement"
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://co2.trade/#org",
+      "name": "co2.trade",
+      "url": "https://co2.trade/",
+      "description": "A source-led one-page reference describing an infrastructure-grade verification and settlement stack for carbon assets.",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://co2.trade/assets/logo.png"
       }
-    ]
-  }
-  </script>
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://co2.trade/#website",
+      "url": "https://co2.trade/",
+      "name": "co2.trade",
+      "publisher": {
+        "@id": "https://co2.trade/#org"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://co2.trade/#webpage",
+      "url": "https://co2.trade/",
+      "name": "The M2M Verification Stack for Carbon Assets",
+      "isPartOf": {
+        "@id": "https://co2.trade/#website"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Carbon markets"
+        },
+        {
+          "@type": "Thing",
+          "name": "Monitoring, Reporting and Verification (MRV)"
+        },
+        {
+          "@type": "Thing",
+          "name": "Emissions trading"
+        },
+        {
+          "@type": "Thing",
+          "name": "Smart contracts"
+        },
+        {
+          "@type": "Thing",
+          "name": "Oracles"
+        }
+      ],
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://co2.trade/assets/og.png"
+      },
+      "inLanguage": "en",
+      "datePublished": "2026-01-02",
+      "dateModified": "2026-01-02",
+      "breadcrumb": {
+        "@id": "https://co2.trade/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://co2.trade/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://co2.trade/"
+        }
+      ]
+    },
+    {
+      "@type": "WebAPI",
+      "@id": "https://co2.trade/#verification-api",
+      "name": "M2M Verification Stack (Concept)",
+      "description": "A conceptual machine-to-machine interface for issuance, transfer, and retirement of uniquely identifiable carbon assets, designed around auditability and integrity controls.",
+      "provider": {
+        "@id": "https://co2.trade/#org"
+      },
+      "documentation": "https://github.com/greenland-assets/co2.trade",
+      "inLanguage": "en",
+      "category": "Environmental markets / Verification / Settlement"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
